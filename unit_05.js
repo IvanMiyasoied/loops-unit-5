@@ -113,3 +113,28 @@ const input6 = document.getElementById('input6');
 const button6 = document.getElementById('b-6');
 const out6 = document.getElementById('out-6');
 
+
+
+
+
+
+
+
+button6.addEventListener('click', () => {
+    let userValue = input6.value
+
+    out6.textContent = '';
+
+
+    for (let i = 0; i <= userValue - 1; i++) {
+
+        out6.innerHTML += "*".repeat(6) + "<br>"
+    }
+
+
+
+
+})
+
+// Почему userValue вне слушателя, тогда не работает
+// Почему out6.innerHTML = "*".repeat(6)  не работает
